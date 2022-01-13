@@ -123,7 +123,7 @@ const render = (gif) => {
         card.classList.add('card')
         const title = document.createElement('h3')
         const giphy = document.createElement('iframe');
-        title.textContent = e.title.length > 15 ? e.title.slice(0, 15) + '...' : el.title
+        title.textContent = e.title.length > 15 ? e.title.slice(0, 15) + '...' : e.title
         title.title = e.title
         giphy.src = e.embed_url;
         card.append(title, giphy)
